@@ -1,0 +1,29 @@
+{
+  "name": "es6-react-testing",
+  "version": "1.0.0",
+  "description": "ES6 React JS Playground",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dolphub/es6-react-testing.git"
+  },
+  "keywords": [
+    "es6",
+    "react",
+    "reactjs"
+  ],
+  "author": "Randy Mikkelsaar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dolphub/es6-react-testing/issues"
+  },
+  "homepage": "https://github.com/dolphub/es6-react-testing#readme",
+  "dependencies": {
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0"
+  }
+}
