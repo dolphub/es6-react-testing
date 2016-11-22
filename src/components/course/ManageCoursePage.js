@@ -20,7 +20,6 @@ class ManageCoursePage extends Component {
     render() {
         return(
             <div>
-                <h1>Manage Course</h1>
                 <CourseForm
                     allAuthors={[]}
                     course={this.state.course}
@@ -35,7 +34,7 @@ ManageCoursePage.propTypes = {
 };
 
 const mapStateToProps = (state, ownProps) => {
-    let course = { id: '', watchHref: '', title: '', }
+    let course = { id: '', watchHref: '', title: '' };
     return {
         course: course
     };
