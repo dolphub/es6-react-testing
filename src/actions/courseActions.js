@@ -5,6 +5,9 @@ export function loadCoursesSuccess(courses) {
     return { type: types.LOAD_COURSES_SUCCESS, courses };
 }
 
+export function saveCourseSucessful(course) {
+    return { type: types.SAVE_COURSE_SUCCESS, course };
+}
 
 export function loadCourses() {
     return function(dispatch) {
@@ -15,3 +18,13 @@ export function loadCourses() {
         });
     };
 }
+
+export function saveCourse(course) {
+    return function(dispatch) {
+        return courseApi.saveCourse(course).then((courseID) => {
+            dispatch()
+        }).catch(error => {
+            throw(error);
+        })
+    }
+} 

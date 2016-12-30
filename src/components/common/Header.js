@@ -4,7 +4,7 @@ import { Link, IndexLink } from 'react-router';
 const Header = () => {
     return (
         <nav className="navbar navbar-default">
-            <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div id="bs-example-navbar-collapse-1">
                 <ul className="nav navbar-nav">
                     <li><IndexLink activeClassName="active" to="/">Home</IndexLink></li>
                     <li><Link activeClassName="active" to="/about">About</Link></li>

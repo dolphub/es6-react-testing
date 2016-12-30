@@ -19,12 +19,10 @@ class ManageCoursePage extends Component {
 
     render() {
         return(
-            <div>
-                <CourseForm
-                    allAuthors={[]}
-                    course={this.state.course}
-                    errors={this.state.errors}/>
-            </div>
+            <CourseForm
+                allAuthors={[]}
+                course={this.state.course}
+                errors={this.state.errors} />
         );
     }
 }
@@ -47,3 +45,5 @@ const mapDispatchToProps = (dispatch) => {
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(ManageCoursePage);
+
+// TODO: Complete course - async writes in redux, create author reactions
